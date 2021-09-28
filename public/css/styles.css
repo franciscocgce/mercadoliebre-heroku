@@ -1,0 +1,414 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px
+}
+
+/* ACÁ ARRANCO CON EL HEADER BODY*/
+
+body {
+    background-color: #ebebeb ;
+    font-family: 'Roboto', sans-serif
+}
+
+.main-header {
+    background-color:  #EAC926;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif
+}
+
+.logo-barra {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    justify-content: center;
+}
+
+.logo-barra i {
+    background-color: white;
+    color: #ebebeb;
+    height: 50%;
+    margin: 1px 1px 1px 0px;
+    padding-top: 1px;
+}
+
+.logo {
+    width: 200px;
+    flex-grow: 0.50;
+}
+
+.barra-busqueda {
+    flex-grow: 0.50;
+}
+
+.buscador {
+    border-radius: 1px;
+    border: none
+}
+
+.comprar-en-cuotas {
+    font-size: 12px;
+    font-weight: 24px;
+    text-align: center;
+    font-style: normal;
+}
+
+.menu-hamburguesa {
+    background-color:  #1259c3;
+    color: white;
+    display: block;
+    max-width: 50px;
+    padding: 5px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 24px;
+    margin: auto
+}
+
+.main-navbar ul {
+    list-style: none;
+    padding: 0;
+    font-size: 12px
+}
+
+.main-navbar a {
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    font-size: 24px
+}
+
+.main-navbar {
+    display: none;
+}
+
+.imagen-banner {
+    text-align: center;
+    width: 100%;
+}
+
+/* ACÁ ARRANCO CON EL MAIN BODY*/
+
+.main {
+    margin: auto;
+    width: 90%;
+    background-color: #ebebeb;
+    font-family: 'Roboto', sans-serif
+}
+
+.article {
+    margin: 10px;
+}
+
+.imagen {
+    text-align: center;
+    width: 100%;
+}
+
+.article-caja {
+    border: solid 1px white;
+    background-color: white;
+    padding: 15px;
+    text-align: left;
+    position: relative;
+}
+
+.article-caja i {
+    color: #39b54a;
+    display:block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position:absolute;
+    right:20px;
+    top:-15px;
+}
+
+.article i {
+    transition: transform 0.5s;
+}
+
+.article:hover i {
+    transform: rotate(270deg);
+}
+
+.cuerpoTexto {
+    font-size: 12px;
+}
+
+.titulares {
+    font-size: 24px;
+    color:  #666;
+}
+
+.precios-descuentos {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.precios {
+    font-size: 18px;
+    flex-grow: 0.30;
+    align-self: center;
+}
+
+.descuentos {
+    font-size: 16px;
+    color:  #39b54a;
+    flex-grow: 0.70;
+    align-self: center;
+}
+
+.descripciones {
+    font-size: 16px;
+    color: rgb(30, 37, 30);
+    display: none;
+    transition: display
+}
+
+.descripciones:hover {
+    display:block
+}
+
+/* ACÁ ARRANCO CON EL FOOTER BODY*/
+
+.footer-titulo {
+    font-size: 18px;
+    text-align: center;
+    margin: 0;
+    color:  #666;
+}
+
+.texto-footer {
+    font-size: 12px;
+    text-align: center;
+    margin: 0;
+    color:  #666;
+}
+
+.imagen-footer {
+    font-size: 2em;
+    color:  #1259c3;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.copyright {
+    font-size: 12px;
+    margin: 0;
+    color:  #666;
+}
+
+
+/* ACÁ ARRANCO CON EL FORMULARIO DE REGISTRO*/
+
+.form-registro {
+    padding: 20px 15px;
+}
+
+.control-form {
+    margin-bottom: 15px;
+}
+
+.control-form label {
+    margin-bottom: 5px;
+    font-style: italic;
+    display: block
+}
+
+.control-form-login {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.control {
+    width: 90%;
+    padding: 8px
+}
+
+.botton {
+    background-color:  #1259c3;
+    border: none;
+    font-size: 28px;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 90%;
+    align-items: center;
+}
+
+.botton-login {
+    background-color:  #1259c3;
+    border: none;
+    font-size: 28px;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 90%;
+    align-items: center;
+    transition: background-color
+}
+
+.botton-login:hover {
+    background-color:  #0022AA
+}
+
+.botton-cancelled {
+    background-color:  rgba(128, 128, 128, 0.842);
+    border: none;
+    font-size: 28px;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 90%;
+    align-items: center;
+}
+
+
+/* ACÁ ARRANCO CON EL FORMULARIO DE LOGIN*/
+
+
+
+/* ACÁ ARRANCO CON LAS QUERIES*/
+
+@media (min-width: 425px) {
+    .article:hover .descripciones {
+        display: block;
+    }
+    .article .descripciones {
+        display: none;
+        transition: all 0.5s;
+    }
+    .article {
+        box-shadow: 0px 0px 10px white;
+        transition: all 0.5s;
+    }
+    .article:hover {
+        box-shadow: 0px 0px 10px rgb(100,100,100)
+    }
+    .main-navbar {
+        display: block;
+    }
+    .menu-hamburguesa {
+        display: none;
+    }
+    .articulos-tablet {
+        display: flex;
+        justify-content: space-around;
+    }
+    .main-header-top-bar {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .logo {
+        align-self: center;
+        width: 100px;
+    }
+    .barra-busqueda {
+        align-self: center;
+    }
+    .comprar-en-cuotas {
+        align-self: center;
+        font-size: 12px;
+    }
+    .main-navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+    .left-navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+    .right-navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+    .main-navbar li {
+        margin: 5px;
+    }
+    .main-navbar a {
+        font-size: 11px;
+    }
+}
+
+@media (min-width: 768px) {
+    .article:hover .descripciones {
+        display: block;
+    }
+    .article .descripciones {
+        display: none;
+        transition: all 0.5s;
+    }
+    .article {
+        box-shadow: 0px 0px 10px white;
+        transition: all 0.5s;
+    }
+    .article:hover {
+        box-shadow: 0px 0px 10px rgb(100,100,100)
+    }
+    .main-navbar {
+        display: block;
+    }
+    .menu-hamburguesa {
+        display: none;
+    }
+    .main-header-top-bar {
+        display: flex;
+        justify-content: space-between;
+    }
+    .logo {
+        align-self: center;
+        width: 200px;
+    }
+    .barra-busqueda {
+        align-self: center;
+    }
+    .comprar-en-cuotas {
+        align-self: center;
+        font-size: 14px;
+    }
+    .comprar-en-cuotas {
+        align-self: center;
+        font-size: 14px;
+    }
+    .main-navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+    .left-navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+    .right-navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+    .main-navbar li {
+        margin: 5px;
+    }
+    .main-navbar a {
+        font-size: 14px;
+    }
+    .articulos-desktop {
+        display: flex;
+    }
+    .footer {
+        display: flex;
+        font-size: 8px
+    }
+    .footer-titulo {
+        font-size: 12px;
+    }
+    .texto-footer {
+        font-size: 10px;
+    }
+    .imagen-footer:hover {
+        color: #0022AA;
+    }
+}
