@@ -6,7 +6,7 @@ const path = require ("path")
 app.use(express.static(path.resolve(__dirname, "./public")));
 
 
-app.listen (3000, () => console.log ("Servidor corriendo http://localhost:3000/home" ));
+app.listen (process.env.PORT || 3000, () => console.log ("Servidor corriendo http://localhost:3000/home" ));
 
 app.get("/home", (req,res) => {
     const fileToSend = path.join (__dirname, "/views/home.html")
